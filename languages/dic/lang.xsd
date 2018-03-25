@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+	<xsd:schema xmlns:xsd="http://www.w3.org/2000/10/XMLSchema">
+		<xsd:element name="dictionary" type="xsd:string">
+			<xsd:complexType>
+				<xsd:element name="translation" type="xsd:string">
+					<xsd:complexType>
+						<xsd:attribute name="id" type="xsd:string" />
+						<xsd:attribute name="value" type="xsd:string" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>

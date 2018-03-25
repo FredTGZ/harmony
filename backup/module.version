@@ -1,0 +1,7 @@
+<?php
+	global $module_name;
+	
+	$module_infos['name'] = "Backup";
+	$module_infos['version'] = 0;
+	$module_infos['description'] = "Backup module";
+?>

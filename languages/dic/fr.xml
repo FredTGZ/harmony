@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<dictionary>
+	<translation id="#charset" value="ISO-8859-1" />
+	<translation id="snapshot" value="capture" />
+	<translation id="edit" value="éditer" />
+	<translation id="find" value="rechercher" />
+	<translation id="display" value="afficher" />
+	<translation id="print" value="imprimer" />
+	<translation id="save" value="enregistrer" />
+	<translation id="export" value="exporter" />
+	<translation id="import" value="importer" />
+	<translation id="close" value="fermer" />
+	<translation id="properties" value="propriétés" />
+	<translation id="options" value="options" />
+	<translation id="help" value="aide" />
+	<translation id="cancel" value="annuler" />
+	<translation id="delete" value="supprimer" />
+	<translation id="add" value="ajouter" />
+	<translation id="open" value="ouvrir" />
+	<translation id="new" value="nouveau" />
+	<translation id="file" value="fichier" />
+	<translation id="files" value="fichiers" />
+	<translation id="start" value="démarrer" />
+	<translation id="end" value="fin" />
+	<translation id="terminate" value="terminer" />
+	<translation id="send" value="envoyé" />
+	<translation id="date" value="date" />
+	<translation id="year" value="année" />
+	<translation id="month" value="mois" />
+	<translation id="week" value="semaine" />
+	<translation id="day" value="jour" />
+	<translation id="hour" value="heure" />
+	<translation id="minute" value="minute" />
+	<translation id="second" value="seconde" />
+	<translation id="monday" value="lundi" />
+	<translation id="tuesday" value="mardi" />
+	<translation id="wednesday" value="mercredi" />
+	<translation id="thursday" value="jeudi" />
+	<translation id="friday" value="vendredi" />
+	<translation id="saturday" value="samedi" />
+	<translation id="sunday" value="dimanche" />
+	<translation id="day1" value="lundi" />
+	<translation id="day2" value="mardi" />
+	<translation id="day3" value="mercredi" />
+	<translation id="day4" value="jeudi" />
+	<translation id="day5" value="vendredi" />
+	<translation id="day6" value="samedi" />
+	<translation id="day0" value="dimanche" />
+	<translation id="january" value="Janvier" />
+	<translation id="february" value="Février" />
+	<translation id="march" value="Mars" />
+	<translation id="april" value="Avril" />
+	<translation id="may" value="Mai" />
+	<translation id="june" value="Juin" />
+	<translation id="july" value="Juillet" />
+	<translation id="august" value="Août" />
+	<translation id="september" value="Septembre" />
+	<translation id="october" value="Octobre" />
+	<translation id="november" value="Novembre" />
+	<translation id="december" value="Décembre" />
+	<translation id="month1" value="Janvier" />
+	<translation id="month2" value="Février" />
+	<translation id="month3" value="Mars" />
+	<translation id="month4" value="Avril" />
+	<translation id="month5" value="Mai" />
+	<translation id="month6" value="Juin" />
+	<translation id="month7" value="Juillet" />
+	<translation id="month8" value="Août" />
+	<translation id="month9" value="Septembre" />
+	<translation id="month10" value="Octobre" />
+	<translation id="month11" value="Novembre" />
+	<translation id="month12" value="Décembre" />
+	<translation id="active" value="actif" />
+	<translation id="administrator" value="administrateur" />
+
+	<translation id="task" value="tâche" />
+	<translation id="user" value="utilisateur" />
+	<translation id="register" value="s'enregistrer" />
+	<translation id="username" value="utilisateur" />
+	<translation id="name" value="prénom" />
+	<translation id="surname" value="nom" />
+	<translation id="old_password" value="ancien mot de passe" />
+	<translation id="current_password" value="mot de passe actuel" />
+	<translation id="new_password" value="nouveau mot de passe" />
+	<translation id="password" value="mot de passe" />
+	<translation id="password_doesnt_match" value="Les mots de passe ne concordent pas !" />
+	<translation id="submit" value="envoyer" />
+	<translation id="email" value="e-mail" />
+	<translation id="confirm_password" value="Confirmer le mot de passe" />
+	<translation id="user_exist" value="L'utilisateur %s existe déjà !" />
+	<translation id="you_are_connected" value="vous êtes connecté en tant que %s." />
+	<translation id="you_are_not_connected" value="Vous n'êtes pas connecté." />
+	<translation id="edit_profile" value="éditez votre profil" />
+	<translation id="disconnect" value="déconnecter" />
+	<translation id="profile_saved" value="profil sauvé" />
+	<translation id="index" value="Index" />
+	<translation id="login_inactive" value="Votre compte est désactivé pour l'instant, un administrateur l'activera prochainement." />
+	<translation id="login_invalid" value="Compte inexistant ou mot de passe erroné." />
+	<translation id="login_check" value="Vérification du compte" />
+	<translation id="login_ok" value="Connection OK" />
+	<translation id="login_userfound" value="Utilisateur trouvé" />
+	<translation id="login_usernotfound" value="Utilisateur non trouvé" />
+	<translation id="login_usersearch" value="Recherche d'un utilisateur" />
+	<translation id="login_disableduser" value="utilisateur non actif" />
+	<translation id="login_session_exp" value="votre session expirera dans" />
+	<translation id="LoginSessionExpired" value="votre session est expiré." />
+	<translation id="time_minutes" value="minutes" />
+	<translation id="time_seconds" value="secondes" />
+	<translation id="are_you_sure" value="êtes vous sûr ?" />
+	<translation id="task_not_permited" value="cette tâche ne vous est pas permise !" />
+
+	<translation id="connection" value="connexion" />
+	<translation id="connect" value="se connecter" />
+	<translation id="connected" value="connecté" />
+	
+	<translation id="administration" value="administration" />
+	<translation id="update" value="mise à jour" />
+	<translation id="install" value="installer" />
+	<translation id="width" value="largeur" />
+	<translation id="height" value="hauteur" />
+	<translation id="cell" value="cellule" />
+	<translation id="size" value="taille" />
+	<translation id="previous" value="précédent" />
+	<translation id="current" value="courant" />
+	<translation id="next" value="suivant" />
+	<translation id="mydocuments" value="mes documents" />
+	<translation id="manager" value="gestionnaire" />
+	<translation id="organizer" value="organisateur" />
+	<translation id="DEFAULT_DATE_FORMAT" value="d/m/Y" />
+	<translation id="DEFAULT_DATETIME_FORMAT" value="d/m/Y \à H:i" />
+	<translation id="DEFAULT_TIME_FORMAT" value="H:i:s" />
+	<translation id="DEFAULT_HOUR_FORMAT" value="H:i" />
+	<translation id="avatar" value="avatar" />
+
+	<translation id="byte" value="octet" />
+	<translation id="Kb" value="Ko" />
+	<translation id="Mb" value="Mo" />
+	<translation id="Gb" value="Go" />
+	<translation id="category" value="catégorie" />
+	<translation id="categories" value="catégories" />
+	<translation id="frequency" value="fréquence" />
+	<translation id="saveok" value="sauvegarde effectuée" />
+	<translation id="template" value="modèle" />
+		
+</dictionary>

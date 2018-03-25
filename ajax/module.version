@@ -1,0 +1,7 @@
+<?php
+	global $module_name;
+	
+	$module_infos['name'] = "Ajax";
+	$module_infos['version'] = "20110411";
+	$module_infos['description'] = "Ajax module";
+?>

@@ -1,0 +1,7 @@
+<?php
+	global $module_infos;
+
+	$module_infos['name'] = "Language support";
+	$module_infos['version'] = 0;
+	$module_infos['description'] = "Language support module by FredTGZ";
+?>

@@ -1,0 +1,7 @@
+<?php
+	global $module_infos;
+
+	$module_infos['name'] = "Forms";
+	$module_infos['version'] = 0;
+	$module_infos['description'] = "Forms module by FredTGZ";
+?>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<bbtags>
+	<bbtag id="t1" param="n" html_id="title1_open" pattern="#\[t1\]#is" />
+	<bbtag id="/t1" param="n" html_id="title1_close" pattern="#\[/t1\]#is" />
+	<bbtag id="b" param="n" html_id="bold_open" pattern="#\[b\]#is" />
+	<bbtag id="/b" param="n" html_id="bold_close" pattern="#\[/b\]#is" />
+	<bbtag id="i" param="n" html_id="italic_open" pattern="#\[i\]#is" />
+	<bbtag id="/i" param="n" html_id="italic_close" pattern="#\[/i\]#is" />
+	<bbtag id="u" param="n" html_id="underline_open" pattern="#\[u\]#is" />
+	<bbtag id="/u" param="n" html_id="close" pattern="#\[/u\]#is" />
+	<bbtag id="table" param="n" html_id="table_open" pattern="#\[table\]#is" />
+	<bbtag id="table" param="y" html_id="table_open" pattern="#\[table=(.*?)\]#is" />
+	<bbtag id="/table" param="n" html_id="table_close" pattern="#\[/table\]#is" />
+	<bbtag id="row" param="n" html_id="table_open" pattern="#\[row\]#is" />
+	<bbtag id="row" param="y" html_id="table_open" pattern="#\[row=(.*?)\]#is" />
+	<bbtag id="/row" param="n" html_id="table_close" pattern="#\[/row\]#is" />
+	<bbtag id="cell" param="n" html_id="table_open" pattern="#\[cell\]#is" />
+	<bbtag id="cell" param="y" html_id="table_open" pattern="#\[cell=(.*?)\]#is" />
+	<bbtag id="/cell" param="n" html_id="table_close" pattern="#\[/cell\]#is" />
+</bbtags>

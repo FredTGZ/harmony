@@ -1,0 +1,112 @@
+body, p, table, input
+{
+	font-family: Sans-Serif;
+	font-size: 10pt;
+}
+
+.label
+{
+	font-weight: bold;	
+}
+
+.Center
+{
+	text-align: center;
+}
+.LoginBox
+{
+	font-family: Sans-Serif;
+	font-size: 10pt;
+	background-color: #FFFFDD;
+	color: black;
+	border: 1px black solid;
+}
+
+input.LoginBox
+{
+	background-color: #F1F1FF;
+	border: 1px navy solid;
+}
+
+td.loginbox
+{
+	font-family: Sans-Serif;
+	font-size: 14pt;
+	background-color: transparent;
+	font-weight: bold;
+	color: black;
+	text-align: left;
+}
+
+table.LoginBox .LoginBoxTitle
+{
+	font-size: 14pt;
+	font-weight: normal;
+}
+input
+{
+	/*border: 1px black solid;*/
+	background-color: white;
+	font-family: Sans-Serif;
+	font-size: 10pt;
+}
+
+input.Buttons
+{
+	text-align: middle;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	height: 22px;
+	cursor: pointer;
+}
+
+input.Rounded, table.LoginBox
+{
+	border-radius: 6px;
+	-swebkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+span.Copyright
+{
+	font-family: Sans-Serif;
+	font-size: 8pt;
+	font-style: italic;
+}
+
+input.LoginRegister
+{
+	background-color: white;
+	color: black;
+	font-weight: normal;
+	font-size: 8pt;	
+}
+
+.Disabled
+{
+	background-color: silver;
+	color: grey;	
+}
+
+#logintoolbar
+{
+	font-family: Sans-Serif;
+	font-size: 10pt;
+	font-weight: normal;
+	color: black;
+	background-color: #F4F3EF;
+	border-width: 2px;
+	border-style: solid;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #ACA899;
+	border-left-color: #FFFFFF;
+	border-right-color: #ACA899;
+	vertical-align: middle;
+	width: 100%;
+	height: 32px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+

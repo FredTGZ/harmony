@@ -1,0 +1,7 @@
+<?php
+	global $module_name;
+	
+	$module_infos['name'] = "Web Sheets";
+	$module_infos['version'] = '20130730';
+	$module_infos['description'] = "Web Sheets module by FredTGZ";
+?>

@@ -1,0 +1,7 @@
+<?php
+	global $module_infos;
+
+	$module_infos['name'] = "Database";
+	$module_infos['version'] = '20090715';
+	$module_infos['description'] = "Database module by FredTGZ";
+?>

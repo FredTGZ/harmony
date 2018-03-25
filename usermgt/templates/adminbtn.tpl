@@ -1,0 +1,1 @@
+<td width="40"><div style="height: 24px;"><form name="admin" method="post" action="{LoginBaseScript}"><input type="hidden" name="LoginAction" value="admin"><input class="Buttons Rounded" type="submit" value="{LoginAdmin}" name="submit_admin" /></form></div></td>

@@ -1,0 +1,6 @@
+<?php
+	global $module_infos;
+	$module_infos['name'] = "Base objects";
+	$module_infos['version'] = 20161207;
+	$module_infos['description'] = "Base objects module by FredTGZ";
+?>
