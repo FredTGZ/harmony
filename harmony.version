@@ -1,7 +1,7 @@
 <?php
 	global $harmony_infos;
 	$harmony_infos = array();
-	
-	$harmony_infos['version'] = '3.0 (2017)';
-	$harmony_infos['phpver'] = '5.2.0';
+	/**/
+	$harmony_infos['version'] = '3.1 (2020)';
+	$harmony_infos['phpver'] = '7.3.0';
 ?>
