@@ -9,8 +9,13 @@ class CHTTPServer
 	public static function GetPort()			{ return CHTTPServer::GetServerVar('SERVER_PORT'); }
 	public static function GetSoftware()		{ return CHTTPServer::GetServerVar('SERVER_SOFTWARE'); }
 	public static function GetDocumentRoot()	{ return CHTTPServer::GetServerVar('DOCUMENT_ROOT'); }
-	public static function GetScriptName()		{ return CHTTPServer::GetServerVar('SCRIPT_FILENAME'); }
 	public static function GetRequestURI()		{ return CHTTPServer::GetServerVar('REQUEST_URI'); }
+	public static function GetScriptName()		{
+	    $path =  CHTTPServer::GetServerVar('SCRIPT_FILENAME');
+	    $pos = strrpos($path, "/");
+	    return substr($path, $pos+1);
+	
+	}
 	
 	public static function GetServerVar($name)
 	{
@@ -106,10 +111,14 @@ class CHTTPServer
 			return ('http://'.CHTTPServer::GetServerVar('SERVER_NAME').CHTTPServer::GetServerVar('SCRIPT_NAME').'?'.CHTTPServer::GetServerVar('QUERY_STRING'));
 	}
 
-	public static function GetScriptDomain()
+	public static function GetScriptDomain($protocol="http")
 	{
+	    return $protocol.'://'.CHTTPServer::GetServerVar('HTTP_HOST').'/';
+	    
 		$file_url = CHTTPServer::GetServerVar('REQUEST_URI');
-
+		
+		//
+		
 		if (substr($file_url, strlen($file_url)-1, 1) == '/') {
 			$ret = CHTTPServer::GetServerVar('REQUEST_URI');
 		}
@@ -120,7 +129,7 @@ class CHTTPServer
 		
 		if (CHTTPServer::GetServerVar('SERVER_PORT') != '80') $ret = ':'.CHTTPServer::GetServerVar('SERVER_PORT').$ret;
 		
-		return 'http://'.CHTTPServer::GetServerVar('SERVER_NAME').$ret;
+		return $protocol.'://'.CHTTPServer::GetServerVar('SERVER_NAME').$ret;
 	}
 }
 

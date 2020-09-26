@@ -72,7 +72,8 @@ if (! defined('HARMONY_INCLUDE')) die("Harmony Library is not loaded !");
 		/**Close the file*/
 		public function Close()
 		{
-			assert($this->hFile != null);
+			//assert($this->hFile != null);
+		    if ($this->hFile != null)
 			fclose($this->hFile);
 		}
 		

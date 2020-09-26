@@ -214,7 +214,7 @@ class CBaseRecordset extends CRecordset
 	
 	/**Permet de r�cup�rer les valeurs directement sous la forme $Recordset->NomDuChamp
 	 * 
-	 * @param unknown $name
+	 * @param string $name
 	 */
 	public function __get($name)
 	{

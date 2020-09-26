@@ -1,9 +1,19 @@
 <?php namespace Harmony\ajax;
+use \DOMDocument;
 
 	class CAjaxComplexResponse
 	{
 	}
 
+	class CAjaxSimpleJSON {
+	    public $return;
+	    public $message;
+	    
+	    public function __construct($return, $message) {
+	        $this->return = $return;
+	        $this->message = $message;
+	    }
+	}
 
 	class CAjaxService extends \Harmony\CBaseObject
 	{
@@ -15,7 +25,7 @@
 		protected $OpenedTag = "";
 		public $ReturnFile = false;
 		private $FileHeader = null;
-		public $Data;
+		public $Data = Array();
 		
 		
 		public function __construct($codepage="UTF-8")
@@ -30,11 +40,27 @@
 			$this->ResponseText = null;
 			$this->ResponseXML = null;
 
-			$this->Data = new \stdClass();
+			//$this->Data = new \stdClass();
+			$this->Data = new CAjaxSimpleJSON("", "");
+		}
+		
+		public function SendResponseJSONOK($Message="")
+		{
+		    $this->Data->return = 'OK';
+		    $this->Data->message = $Message;
+		    $this->SendResponseJSON();
+		}
+		
+		public function SendResponseJSONKO($Message="")
+		{
+		    $this->Data->return = 'KO';
+		    $this->Data->message = $Message;
+		    $this->SendResponseJSON();
 		}
 		
 		public function SendResponseOK($Message="")
 		{
+		    
 			$this->ResponseText = 'OK'.$Message;
 			$this->SendResponse();			
 		}
@@ -54,6 +80,25 @@
 			header("Cache-Control: private",false);
 			die($Content);
 		}
+		
+		
+		public function CheckParamCount($Count)
+		{
+		    if($this->CountParams() != $Count) {
+		        $this->SendResponseKO("Bad parameters count");
+		    }
+		}
+		
+		public function CheckParamCountJSON($Count)
+		{
+		    if($this->CountParams() != $Count) {
+		        $this->Data->return = 'KO';
+		        $this->Data->message = 'Bad parameters count';
+		        $this->SendResponseJSON();
+		    }
+		}
+		
+		
 		
 		public function CountParams()
 		{
@@ -117,17 +162,14 @@
 				header("AjaxServiceName: ".$this->Name);
 				header("AjaxServiceID: ".$this->ID);			
 
-				$dom = new \DOMDocument("1.0", $this->CodePage);
+				$dom = new DOMDocument("1.0", $this->CodePage);
 				$xml = "<?xml version=\"1.0\" encoding=\"".$this->CodePage."\" ?>\n<root>\n\t<provider>Harmony Library</provider>\n\t<data>\n".$this->ResponseXML."\t</data>\n</root>\n";
 				$sxe = simplexml_load_string($xml);
 				$dom_sxe = dom_import_simplexml($sxe);
 				$dom_sxe = $dom->importNode($dom_sxe, true);
 				$dom_sxe = $dom->appendChild($dom_sxe);
 				
-				
-				
 				print($dom->saveXML());
-
 			}
 			                           
 			die();

@@ -1,5 +1,6 @@
 <?php namespace Harmony\database;
  if (! defined('HARMONY_INCLUDE')) die("Harmony Library is not loaded !");
+ use Harmony\CEnum;
  /** \brief Data edition formular
  * 
  * \ingroup database

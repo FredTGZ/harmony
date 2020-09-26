@@ -41,6 +41,10 @@ class CBaseObject
 		die();
 	}
 
+	/**
+	 * 
+	 * @param string $Filename
+	 */
 	public function SerializeInFile($Filename)
 	{
 		$File = new CBaseFile($Filename);
@@ -48,12 +52,22 @@ class CBaseObject
 		$File->SetContent($Content);	
 	}
 	
+	/**
+	 * 
+	 * @param string $Filename
+	 * @return mixed
+	 */
 	public function UnSerializeFromFile($Filename)
 	{
 		$File = new CBaseFile($Filename);
 		return unserialize($File->GetContent());
 	}
 	
+	/**
+	 * 
+	 * @param string $text
+	 * @return string
+	 */
 	private function __ParsePrintR($text)
 	{
 		$ret = "";
@@ -96,6 +110,10 @@ class CBaseObject
 		return $ret;
 	}
 	
+	/**
+	 * 
+	 * @return string
+	 */
 	function __toString()
 	{
 		return get_class($this);

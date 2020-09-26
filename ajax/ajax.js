@@ -181,6 +181,8 @@
 										
 										CallbackFunction(response);
 										break;
+									case 0:
+										break;
 									default:
 										alert("Error: returned status code " + request.status + " " + request.statusText);
 										break;

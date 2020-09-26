@@ -73,7 +73,7 @@ class CRecordset extends \Harmony\CBaseObject
 	{
 		if ($RowCount>0) $limit = ' LIMIT '.$LimitMin.', '.$RowCount;	
 		else $limit = '';
-
+		
 		$this->CurrentQuery = $SQLQuery . $limit;
 		$this->QueryIndex = $this->Database->ExecuteSQLQuery($this->CurrentQuery);
 
@@ -81,11 +81,11 @@ class CRecordset extends \Harmony\CBaseObject
 		
 		$this->RowCount = $this->Database->GetCount($this->QueryIndex);
 		$this->RowIndex = 0;
-
+		
 		if (false === $this->MoveNext($this->Database))
 			$this->RowIndex = self::$InvalidIndex;
 		
-		return true;
+			return true;
 	}
 	
 	//!Move to a specified tupple.
@@ -179,7 +179,7 @@ class CRecordset extends \Harmony\CBaseObject
 	//!To know if your are at the EOF
 	public function IsEOF()
 	{
-		return(($this->RowIndex == -1)||($this->RowIndex>($this->RowCount)));
+		return ( ($this->RowIndex == -1) || ($this->RowIndex > $this->RowCount) );
 	}
 	
 	public function GetRecordCount()
